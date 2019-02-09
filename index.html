@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css"/>
+  <title>Bills</title>
+</head>
+
+<body>
+  <div id="container">
+    <h2>Add Bills</h2>
+
+    <form id="form" action="">
+      <label for="name">Name<span>*</span></label>
+      <input type="text" name="name" id="name" placeholder="Bill name">
+
+      <label for="amount">Amount<span>*</span></label>
+      <input type="number" name="amount" id="amount" placeholder="Bill amount">
+
+      <label for="date">Date</label>
+      <input type="date" name="date">
+
+      <label for="type">Type<span>*</span></label>
+      <select name="type" id="type">
+        <option value="" selected>Select an option</option>
+        <option value="A">Bill A</option>
+        <option value="B">Bill B</option>
+        <option value="C">Bill C</option>
+      </select>
+    </form>
+
+    <div class="container-buttons">
+      <button id="save" class="buttons" type="submit">Save</button>
+      <button id="reset" class="buttons">Reset</button>
+    </div>
+
+    <h2>All Bills</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Date</th>
+        <th>Amount</th>
+      </tr>
+    </table>
+
+    <div class="total">
+      <h2>Total</h2>
+    </div>
+    
+  </div> <!--End Container-->
+
+  <script src="js/script.js"></script>
+</body>
+</html>

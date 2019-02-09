@@ -1,0 +1,51 @@
+body{
+  background-image: url(../img/background-2.jpg);
+  background-size: 100%;
+  margin-top: 5%;
+}
+
+button{
+  background-color: #B41C3F;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-right: 5%;
+  padding: 8px 15px;
+}
+
+form{
+  border: 1px solid black;
+  padding: 2%;
+}
+
+h2{
+  margin-top: 3%;
+}
+
+input{
+  margin-right: 3%; 
+}
+
+span{
+  color: #B41C3F;
+}
+
+table{
+  border: 1px solid black;
+}
+
+#container{
+  background-color: white;
+  border: 1px solid black;
+  padding: 1.5%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container-buttons{
+  border: 1px solid black;
+  border-top: 0;
+  padding: 2%;
+  text-align: center;
+}
