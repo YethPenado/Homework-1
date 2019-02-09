@@ -1,7 +1,8 @@
 (function(){
-  const name = document.getElementById('name');
-  const amount = document.getElementById('amount');
-  const type = document.getElementById('type');
+  let name = document.getElementById('name');
+  let amount = document.getElementById('amount');
+  let date = document.getElementById('date');
+  let type = document.getElementById('type');
   const saveButton = document.getElementById('save');
   const resetButton = document.getElementById('reset');
   const form = document.getElementById('form');
@@ -12,6 +13,8 @@
     amount.addEventListener('blur', validationInputs);
     type.addEventListener('blur', validationInputs);
     resetButton.addEventListener('click', resetForm);
+    saveButton.addEventListener('click', formData);
+    form[0];
   }
   validation();
 
@@ -49,6 +52,32 @@
       alert('Error. Please, complete the fields');
     }
   }
+
+  // Esto no es del todo funcional :( 
+  const objects = {
+    name: name.value,
+    amount: amount.value,
+    date: date.value,
+    type: type.value
+  }
+
+  const table = document.getElementById('bill-table');
+
+  function bill(){
+    const rows = document.createElement('tr');
+    for (const data in objects){
+      const cells = document.createElement('td');
+
+      rows.appendChild(cells);
+      table.appendChild(rows);
+
+      cells.innerText = data.name;
+      cells.innerText = data.amount;
+      cells.innerText = data.date;
+      cells.innerText = data.type;
+    }
+  }
+  saveButton.addEventListener('click', bill);
 
 
 })();

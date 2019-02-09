@@ -18,10 +18,10 @@
       <input type="text" name="name" id="name" placeholder="Bill name">
 
       <label for="amount">Amount<span>*</span></label>
-      <input type="number" name="amount" id="amount" placeholder="Bill amount">
+      <input type="number" name="amount" id="amount" min="0" placeholder="Bill amount">
 
       <label for="date">Date</label>
-      <input type="date" name="date">
+      <input type="date" name="date" id="date">
 
       <label for="type">Type<span>*</span></label>
       <select name="type" id="type">
@@ -38,13 +38,17 @@
     </div>
 
     <h2>All Bills</h2>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Date</th>
-        <th>Amount</th>
-      </tr>
+    <table id="bill-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Amount</th>
+          <th>Date</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody id="table-data">
+      </tbody>
     </table>
 
     <div class="total">
